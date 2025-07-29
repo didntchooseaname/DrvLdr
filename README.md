@@ -7,7 +7,21 @@ DrvLdr is a Windows command-line utility designed for loading and removing kerne
 
 The utility serves as a simplified interface for kernel driver management operations that would otherwise require direct interaction with Windows service APIs. For detailed information about the build system configuration, see Project Configuration. For complete API documentation and command-line usage patterns, see [API Reference](https://deepwiki.com/didntchooseaname/DrvLdr/4-api-reference)
 
-![](DrvLdr-schema.png) 
+![](assets/DrvLdr-schema.png) 
+
+## Usage
+
+Register and load the driver service:
+```
+DrvLdr.exe load <DriverPath>
+```
+
+Stop and delete the driver service:
+```
+DrvLdr.exe delete <DriverName>
+```
+
+![](assets/demo.png)
 
 ## References
 
