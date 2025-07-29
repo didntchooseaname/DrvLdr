@@ -18,7 +18,7 @@ DrvLdr.exe load <DriverPath>
 
 Stop and delete the driver service:
 ```
-DrvLdr.exe delete <DriverName>
+DrvLdr.exe remove <DriverName>
 ```
 
 ![](assets/demo.png)
