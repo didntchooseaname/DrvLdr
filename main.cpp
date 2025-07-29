@@ -77,7 +77,7 @@ BOOL RemoveDriver(const char* serviceName) {
     }
 
     SERVICE_STATUS status;
-    ControlService(hService, SERVICE_CONTROL_STOP, &status); // ignore l’erreur si déjà arrêté
+    ControlService(hService, SERVICE_CONTROL_STOP, &status);
 
     if (!DeleteService(hService)) {
         printf("[-] DeleteService failed: %lu\n", GetLastError());
